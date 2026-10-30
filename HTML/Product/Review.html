@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../../CSS/Style.css">
+</head>
+
+<body>
+
+    <!--Navigation Bar-->
+    <header>
+        <!--navigation bar-->
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">MAASS watches</div>
+                <!--navigation links-->
+                <ul>
+                    <li><a href="../../Index.html">Home</a></li>
+                    <li class="active"><a href="Product Page.html">Product</a></li>
+                    <li><a href="../../HTML/Blog/blogmain.html">Blog</a></li>
+                    <li><a href="../../HTML/Research/Research Page.html">Research</a></li>
+                    <li><a href="../../HTML/About/Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <title>Watch Review</title>
+        <style>
+            body {
+                background-color: #f0eaea; 
+                align-items: center; 
+                justify-content: center; 
+            }
+    
+            h1 {
+                display: flex; 
+                align-items: center; 
+                justify-content: center;
+                width: 98%; 
+                color: #1e1e1e; 
+                font-size: 26px; 
+                font-weight: bold; 
+                padding: 20px 0; 
+                border-radius: 10px;
+            }
+    
+            label {
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #30d8f2cf;
+            }
+    
+            input, select, textarea {
+                width: 97%;
+                padding: 12px;
+                margin-bottom: 15px;
+                border: 1px solid #444;
+                border-radius: 5px;
+                font-size: 14px;
+                background: #3a3a3a;
+                color: #fff;
+            }
+    
+            textarea {
+                resize: vertical;
+                min-height: 100px;
+            }
+    
+            .Submitbttn {
+                display: flex;
+                justify-content: center;
+            }
+    
+            button {
+                flex: 1;
+                background-color: #30d8f2cf;
+                color: #1e1e1e;
+                padding: 12px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 16px;
+                margin: 5px;
+                font-weight: bold;
+            }
+    
+            button:hover {
+                background-color: #0d199ad2;
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1>Share Your Experience</h1>
+        <div class="Review_Form">
+            <div class="Review_box">
+                <form name="form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name">
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email">
+    
+                    <label for="watch">Watch:</label>
+                    <select id="watch" name="watch">
+                        <option value="">Select a watch</option>
+                        <option value="1">Datejust 36</option>
+                        <option value="2">Cosmograph Daytona</option>
+                        <option value="3">Submariner</option>
+                        <option value="4">Day-Date</option>
+                        <option value="5">Constellation</option>
+                        <option value="6">SeaMaster</option>
+                        <option value="7">SpeedMaster Calibre 321</option>
+                        <option value="8">De Ville</option>
+                        <option value="9">Centric Automatic</option>
+                        <option value="10">DiaMaster Thinline</option>
+                        <option value="11">The Original Automatic</option>
+                        <option value="12">True Automatic Diamonds</option>
+                        <option value="13">Apple Watch Ultra 2</option>
+                        <option value="14">Amazfit Bip 5</option>
+                        <option value="15">CMF Watch Pro 2</option>
+                        <option value="16">Samsung Smart Watch</option>
+                    </select>
+    
+                    <label for="rating">Overall Rating:</label>
+                    <select id="rating" name="rating">
+                        <option value="">Choose an option</option>
+                        <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                        <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
+                        <option value="3">&#9733;&#9733;&#9733;</option>
+                        <option value="2">&#9733;&#9733;</option>
+                        <option value="1">&#9733;</option>
+                    </select>
+    
+                    <label for="feedback">Comments:</label>
+                    <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your feedback"></textarea>
+    
+                    <div class="Submitbttn">
+                        <button type="submit"  onclick="formvalidation()" style="color: white;">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+
+    <script src="../../JS/codes.js"></script>
+    
+    <!---section for footer-->
+    <footer class="footer" style="padding-bottom: 10px; padding-top: 10px;">
+        <div class="row">
+            <div class="footer-col">
+                <!--for company-->
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <!--for gethelp-->
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Online Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <!--social media links for contact-->
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <ul>
+                        <li><img src="../../Image/Logo/instagram.png"><img src="../../Image/Logo/twitter.png"><img
+                                src="../../Image/Logo/youtube.png"></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 style="padding-top: 15px;">&copy; 2025. All rights reserved.</h1>
+    </footer>
+</body>
+
+</html>

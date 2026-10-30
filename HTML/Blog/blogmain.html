@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="blogpage" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Avin Subedi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>blogmain</title>
+
+    <!-- Internal CSS implementation -->
+    <style>
+        table {
+            table-layout: fixed;
+            border-radius: 10px;
+            background-color: rgba(224,
+                    224,
+                    224,
+                    0.425);
+            /* Faded light grey background */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow around the table */
+            padding: 10px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        img.hover:hover {
+            transform: scale(1);
+            opacity: 0.7;
+        }
+
+        /* General Image Hover Effect */
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            /* Smooth transition for transform and box-shadow properties */
+        }
+
+        img:hover {
+            transform: scale(1.04);
+            /* Slightly zooms in the image when hovered */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        /* Customizing Links */
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../../CSS/Style.css" />
+</head>
+
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <!--navigation bar-->
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">MAASS watches</div>
+                <!--navigation links-->
+                <ul>
+                    <li><a href="../../Index.html">Home</a></li>
+                    <li><a href="../../HTML/Product/Product Page.html">Product</a></li>
+                    <li class="active">
+                        <a href="../../HTML/Blog/blogmain.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="../../HTML/Research/Research Page.html">Research</a>
+                    </li>
+                    <li><a href="../../HTML/About/Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="featured-section">
+        <!-- Section for the featured content -->
+        <div class="featured">
+            <!-- Container for the featured article -->
+            <a href="../../HTML/Blog/featured.html">
+                <img src="../../Image/BlogFiles/featured.jpg" alt="Featured Article Image"
+                    class="hover" /><!-- Image for the featured article -->
+            </a>
+            <h1>Technology and the Watch Industry</h1>
+            <!-- Main headline of the featured article -->
+            <h4>
+                The watch industry has greatly transformed because of technology,
+                which is rapidly evolving. Classic mechanical watches designed as
+                examples of watchmaking art have their counterparts in devices...
+            </h4>
+            <!-- Short description of the featured article -->
+            <button onclick="window.location.href='../../HTML/Blog/featured.html'">
+                Read More</button><!-- Button to redirect to the full article -->
+        </div>
+
+        <!-- Section for mini posts -->
+        <div class="mini-posts">
+            <div class="mini-post">
+                <a href="../../HTML/Blog/minitopic1.html">
+                    <img src="../../Image/BlogFiles/minitopic1.jpg" alt="Mini Post 1 Image" class="hover" />
+                </a>
+                <h2>Positive Impacts of Technology on Watches</h2>
+                <!-- Title for the first mini post -->
+                <button onclick="window.location.href='../../HTML/Blog/minitopic1.html'">
+                    Read More
+                </button>
+            </div>
+
+            <div class="mini-post">
+                <a href="../../HTML/Blog/minitopic2.html">
+                    <img src="../../Image/BlogFiles/minitopic2.jpg" alt="Mini Post 2 Image" class="hover" />
+                </a>
+                <h2>Challenges and Drawbacks of Technology in the Watch Industry</h2>
+                <button onclick="window.location.href='../../HTML/Blog/minitopic2.html'">
+                    Read More
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div style="margin-top: 50px"></div>
+    <!-- Spacer for margin between content -->
+
+    <table style="width: 100%; table-layout: fixed">
+        <!-- Table for displaying content in columns -->
+        <tr>
+            <!-- Table row containing three columns -->
+            <td style="width: 33%; padding: 10px">
+                <!-- First column -->
+
+                <img src="../../Image/BlogFiles/minitopic3.jpg" alt="minitopic3" class="hover" />
+                <h3>Leveraging Technology to Boost the Watch Sales</h3>
+                <p>
+                    The topic is appropriately stated as ‘How technology can boost watch
+                    sales in a cutthroat world?’ since technology has a central role in
+                    increasing the sales of watches.
+                </p>
+                <button onclick="window.location.href='../../HTML/Blog/minitopic3.html'">
+                    Read More
+                </button>
+            </td>
+
+            <td style="width: 33%; padding: 10px">
+                <!-- Second column -->
+
+                <img src="../../Image/BlogFiles/minitopic4.jpg" alt="minitopic4" class="hover" />
+                <h3>Sustainability and Green Technology in Watchmaking</h3>
+                <p>
+                    The watch industry is at the precipice of change as watches
+                    gravitate toward and embody sustainable and green technology.
+                </p>
+                <button onclick="window.location.href='../../HTML/Blog/minitopic4.html'">
+                    Read More
+                </button>
+            </td>
+
+            <td style="width: 33%; padding: 10px">
+                <!-- Third column -->
+
+                <img src="../../Image/BlogFiles/minitopic5.jpg" alt="minitopic5" class="hover" />
+                <h3>Balancing Innovation and Tradition</h3>
+                <p>
+                    Underlying all aspects of the watch industry, technology has
+                    revolutionized the appearance and production of the timepiece itself
+                    and the way the products are marketed and sold.
+                </p>
+                <button onclick="window.location.href='../../HTML/Blog/minitopic5.html'">
+                    Read More
+                </button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="../../JS/codes.js"></script>
+
+    <section class="subscribe">
+        <!-- Section for newsletter subscription -->
+        <h2>Subscribe to Our Newsletter</h2>
+        <form name="form" onsubmit="formvalidation()">
+            <!-- Form to collect user input -->
+            <input type="text" placeholder="Name" name="name" required /><br />
+            <input type="email" placeholder="Email" name="email" required /><br />
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!---section for footer-->
+    <footer class="footer">
+        <div class="row">
+            <div class="footer-col">
+                <!--for company-->
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="/HTML/About/Aboutus.html">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <!--for gethelp-->
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Online Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-col"></div>
+        </div>
+        <h1 style="padding-top: 15px">&copy; 2025. All rights reserved.</h1>
+    </footer>
+</body>
+
+</html>

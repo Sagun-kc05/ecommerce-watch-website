@@ -1,0 +1,791 @@
+body {
+  margin: 0;
+}
+
+/*style for navigation bar*/
+.navbar {
+  background-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  z-index: 1;
+}
+
+/*style navbar conatiner*/
+.navdiv {
+  display: flex;
+  align-items: center;
+  /*centers the item*/
+  justify-content: space-between;
+  /*give space between content*/
+}
+
+/*styling for logo*/
+.logo {
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/*style for list items*/
+.navdiv li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*styling links*/
+.navdiv a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 25px;
+  font-weight: bold;
+  padding: 16px;
+}
+
+/*style for hover effect*/
+.navdiv a:hover {
+  background-color: #484848;
+  /*change background color on hover*/
+}
+
+/*styling for active effect*/
+.navdiv a:active {
+  background-color: #303030;
+  /*change background color on active*/
+}
+
+.active a {
+  text-decoration: underline;
+}
+
+/*styling footer*/
+.footer {
+  margin-top: 5%;
+  background-color: #2c3e50;
+}
+
+/*styling row in footer*/
+.row {
+  display: flex;
+}
+
+.footer h1 {
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+  margin-top: -10px;
+}
+
+/*styling links on footer*/
+.footer ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 300;
+  display: block;
+  color: lightcoral;
+}
+
+/*styling for footer list item*/
+.footer ul li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/*styling for footer columns*/
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  /*adds horizontal padding*/
+}
+
+/*styling for footer headings*/
+.footer-col h4 {
+  padding-left: 10%;
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  /*capitalizes first word*/
+  margin-bottom: 30px;
+  /*adds space below the heading*/
+}
+
+
+/*PRODUCT PAGE CSS*/
+.Product_featured {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -4%;
+  margin-bottom: -10%;
+}
+
+/*SLider*/
+
+main {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 0px 0px 3px black;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  position: absolute;
+}
+
+/*product Name Company*/
+.product_company {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -4%;
+}
+
+/*product*/
+.flexproduct {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+/*Product Card CSS*/
+.product_card {
+  max-width: 230px;
+  background-color: #d9d9d9;
+  padding: 40px;
+  box-shadow: 0 5px 5px black;
+}
+
+.product_card_image {
+  width: 230px;
+}
+
+.product_card h4 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.product_card div {
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product_card button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 6px;
+}
+
+.product_card:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.product_card a {
+  color: grey;
+  text-decoration: none;
+}
+
+.product_card a:hover {
+  color: black;
+}
+
+.product_card:hover button {
+  color: black;
+  background-color: #fff;
+}
+
+.product_card .discountp {
+  color: black;
+}
+
+.learn_more {
+  border-radius: 7px;
+}
+
+.discountp {
+  background-color: #adb8b9;
+  max-width: 60px;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.discountprod {
+  background-color: #adb8b9;
+  max-width: 100px;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+.proddet {
+  list-style: none;
+  margin-left: -10%;
+  font-weight: bold;
+}
+
+/*Review Button Section CSS*/
+.ReviewSec {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.ReviewSec button {
+  font-size: 20px;
+}
+
+.ReviewSec a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 576px) {
+  .product_card {
+    font-size: 24px;
+  }
+}
+
+/*Product Page Information*/
+.product_page {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product_page_image {
+  width: 30%;
+  height: 50%;
+  box-shadow: 0px 0px 3px black;
+}
+
+.product_page_information {
+  width: 25%;
+  padding: 35px;
+  box-shadow: 0px 0px 3px black;
+  background-color: grey;
+}
+
+.product_page_information h3 {
+  font-size: 30px;
+}
+
+.product_page_information h4 {
+  font-size: 25px;
+}
+
+.product_page_information h5 {
+  font-size: 20px;
+}
+
+.product_page_information h6 {
+  font-size: 15px;
+}
+
+.star {
+  height: 15px;
+}
+
+.buy {
+  padding: 15px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #686868;
+  padding: 10px;
+}
+
+/*Review Form Page*/
+.Review_Form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+}
+
+.Review_box {
+  background: #413f3f;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+
+/*PopUP*/
+.btn {
+  padding: 10px 60px;
+  background-color: #e0e0e0;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.popup {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: black;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  z-index: 2;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.popup button {
+  width: 100%;
+  margin-top: 50px;
+  padding: 10px 0;
+  background: #6fd549;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/*PRODUCT PAGE CSS END*/
+
+/*HOME PAGE CSS*/
+
+.content a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px 70px;
+  border-radius: 50px;
+  /*rounds the corner*/
+  margin: 20px;
+  background-color: transparent;
+}
+
+/*positioning for content*/
+.content {
+  position: absolute;
+  /*set absolute position*/
+  bottom: 0%;
+}
+
+/*styling for watch images*/
+.watch-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 20px auto;
+  /*centers the image with margin*/
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /*adds shadow*/
+}
+
+.container {
+  text-align: center;
+}
+
+/*styling for shop now button*/
+.container a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  /*sets border to white*/
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin: 20px;
+  background-color: black;
+}
+
+/*Overview Page*/
+.overview img {
+  max-height: 400px;
+  max-width: 700px;
+}
+
+.overview {
+  margin-left: 40px;
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.overview a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+
+/*HOMEPAGE CSS END*/
+
+/*BLOG PAGE CSS*/
+
+.blogfooter {
+  text-align: center;
+  padding: 10px;
+  background-color: #2c3e50;
+  color: #fff;
+}
+
+/* Featured Section */
+.featured-section {
+  display: flex;
+  margin: 20px;
+}
+
+.featured {
+  flex: 2;
+  margin-right: 20px;
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.featured h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1a1210;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.mini-posts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mini-post {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.mini-post h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #1a1210;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Subscribe Section */
+.subscribe {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: -5%;
+}
+
+.subscribe input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  max-width: 300px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background-color: #c0392b;
+}
+
+/* featured webpage */
+
+.back-home {
+  margin-top: 25px;
+  color: rgb(48, 48, 48);
+  font-size: 1.2rem;
+}
+
+.featured-header {
+  width: 100%;
+  height: 500px;
+  background-color: #e0e0e0;
+  /* Sets a light grey background */
+}
+
+.header-featured {
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  width: 90%;
+  font-size: 2.6rem;
+  color: var(--bg-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.para-text {
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+  margin-top: 12%;
+  text-align: center;
+}
+
+/* BLOG PAGE CSS END*/
+
+/*CSS ABOUT US**/
+
+.meet {
+  text-align: center;
+}
+
+.image1 {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  font-size: 30px;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 290px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.name-content {
+  padding: 10px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card .name img {
+  background-color: white;
+  border-radius: 0px;
+  width: 290px;
+}
+
+/*feedback form*/
+.feedback {
+  text-align: center;
+  background-color: #888888;
+  padding: 10px;
+}
+
+.cvbutton a {
+  text-decoration: none;
+  color: black;
+}
+
+/*CSS Portfolio*/
+
+.cv-color {
+  background-color: rgb(238, 238, 238);
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: 60px;
+  height: 1050px;
+  padding: 20px;
+  margin-left: 22%;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+
+.cv-header {
+  text-align: center;
+}
+
+.cv-header h1 {
+  margin: 10px;
+}
+
+.cv-header h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cv-img-area {
+  width: 200px;
+  height: 200px;
+  border-radius: 50px;
+  margin: 25px;
+  border: 15px;
+}
+
+.cv-img-area img {
+  width: 100px;
+}
+
+/*Contains both left and right column*/
+.cv-main {
+  display: flex;
+  margin-right: 30px;
+  padding-left: 150px;
+}
+
+.left {
+  flex: 1;
+}
+
+.cv-left p {
+  line-height: 1;
+  padding-right: 40px;
+}
+
+.cv-left ul li {
+  line-height: 1;
+}
+
+.cv-right {
+  flex: 1;
+  padding: 1px;
+}
+
+.cv-container {
+  border: 1px solid black;
+}
+
+.cvbuttonspecs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/*CSS Portfolio End*/
+
+/*CSS ABOUTUS END**/
+
+/*CSS Research Page*/
+
+/*Contains a whole section*/
+.webref {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.webref td {
+  margin: 20px;
+  padding: 20px;
+}
+
+.webref img {
+  height: 300px;
+  width: 500px;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.lists {
+  padding-left: 400px;
+}
+
+/*Title*/
+.pagesection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Description Points*/
+.RPdesc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 15px;
+  font-size: large;
+}
+
+/*CSS Research END*/

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Aniket">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="../../CSS/Style.css">
+</head>
+
+<body style="background-color: black;">
+
+    <!--Navigation Bar-->
+    <header>
+        <!--navigation bar-->
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo">MAASS watches</div>
+                <!--navigation links-->
+                <ul>
+                    <li><a href="../../Index.html">Home</a></li>
+                    <li class="active"><a href="#">Product</a></li>
+                    <li><a href="../../HTML/Blog/blogmain.html">Blog</a></li>
+                    <li><a href="../../HTML/Research/Research Page.html">Research</a></li>
+                    <li><a href="../../HTML/About/Aboutus.html">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--POPPER-->
+    <div class="popup" id="popup">
+        <img src="../../Image/ProductFiles/Misc/Tick.png">
+        <h2>Thank you!</h2>
+        <p>Thank you for your purchase</p>
+        <button type="button" onclick="closePopup()">OK</button>
+    </div>
+
+    <section class="product_page">
+        <img class="product_page_image" src="../../Image/ProductFiles/Rolex/R2.png">
+        <div class="product_page_information">
+            <h4>Cosmograph Daytona</h4>
+            <h4>
+                Price: <del>$9000</del> 7250 <p class="discountprod">25% off</p>
+            </h4>
+            <h5>Rating:<img src="../../Image/ProductFiles/Misc/star.png" class="star"><img
+                    src="../../Image/ProductFiles/Misc/star.png" class="star"><img
+                    src="../../Image/ProductFiles/Misc/star.png" class="star"><img
+                    src="../../Image/ProductFiles/Misc/star.png" class="star"></h5>
+            <hr>
+            <ul class="proddet">
+                <li>Case material: Oyster
+                <li>Case diameter: 40mm</li>
+                <li>WAter resistance: 100 meters</li>
+            </ul>
+            <h6>Cosmograph Daaytona, with its tachymetric scale and high-performance chronograph, allowing drivers to
+                measure speed up to 400 km/h </h6>
+            <button type="submit" class="btn" onclick="openPopup()">Buy Now</button>
+            <button class="btn" style="margin: 3px;"><a href="Product Page.html"
+                    style="text-decoration: none;color: black;">Back</button>
+        </div>
+    </section>
+    <!---section for footer-->
+    <footer class="footer" style="padding-bottom: 10px; padding-top: 10px;">
+        <div class="row">
+            <div class="footer-col">
+                <!--for company-->
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <!--for gethelp-->
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Online Payment</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <!--social media links for contact-->
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <ul>
+                        <li><img src="../../Image/Logo/instagram.png"><img src="../../Image/Logo/twitter.png"><img
+                                src="../../Image/Logo/youtube.png"></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <h1 style="padding-top: 15px;">&copy; 2025. All rights reserved.</h1>
+    </footer>
+    <script src="../../JS/codes.js"></script>
+</body>
+
+</html>
